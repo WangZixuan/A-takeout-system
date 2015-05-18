@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title></title>
+        <script type="text/javascript">
+            var leftSecond =10;        //设定初始值
+            var inervalId;
+            function CountDown() 
+            {
+                var reg = document.getElementById("btnReg");    //取出id为btnreg的值
+                if (reg) {                    
+                    if (leftSecond <=0) 
+                    {                    //如果值小于等于0则按钮可用
+                        reg.value = "Register";
+                        reg.disabled ="";
+                    //                    clearInterval(inervalId);
+                    }
+                    else 
+                    {                                            //如果值大于0
+                        //将按钮的值改为…+设定值
+                        reg.value ="Read carefully, "+ leftSecond +" seconds left."
+
+                        leftSecond--;                                    //设定值减1
+                    }
+                }
+            }
+            inervalId = setInterval("CountDown()", 1000);        //每隔1秒刷新
+        </script>
+    </head>
+    <body>
+    <textarea></textarea>
+    <input id="btnReg" type="button" value ="Register" disabled="disabled"/>    //按钮初始不可用
+    </body>
+</html>
