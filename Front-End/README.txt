@@ -1,1 +1,0 @@
-Front-End for the takeout system.

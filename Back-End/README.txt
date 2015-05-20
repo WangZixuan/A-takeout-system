@@ -1,1 +1,0 @@
-Back-End for the takeout system.
