@@ -1,4 +1,5 @@
 <?php
+
 $con = mysql_connect("localhost","root","");
 if (!$con)
   {
@@ -15,7 +16,12 @@ if (!mysql_query($sql,$con))
   {
   die('Error: ' . mysql_error());
   }
-echo "1 record added";
 
-mysql_close($con)
+mysql_close($con);
+
+echo '<script> alert("你好"); history.back();</script>';   
+exit;   
+
+
+
 ?>
