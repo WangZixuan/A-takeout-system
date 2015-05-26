@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -12,21 +12,33 @@
 <h1 align="center">注册</h1>
 <br>
 <br>
-<form class="form-horizontal" role="form">
+<form action="php/register.php" class="form-horizontal" role="form" method="post">
 	<div class="form-group">
     <div class="col-md-4 col-md-offset-4">
-    	<input type="text" class="form-control" id="name" placeholder="用户名">
+    	<input type="text" class="form-control" name="name" placeholder="用户名">
     </div>
     </div>
     <div class="form-group">
     <div class="col-md-4 col-md-offset-4">
-    	<input type="password" class="form-control" id="password" placeholder="密码">
+    	<input type="password" class="form-control" name="password" placeholder="密码">
     </div>
     </div>
     
      <div class="form-group">
     <div class="col-md-4 col-md-offset-4">
-    	<input type="password" class="form-control" id="password" placeholder="再来一次密码">
+    	<input type="password" class="form-control" name="password2" placeholder="再来一次密码">
+    </div>
+    </div>
+    
+     <div class="form-group">
+    <div class="col-md-4 col-md-offset-4">
+    	<input type="text" class="form-control" name="email" placeholder="伊妹儿">
+    </div>
+    </div>
+    
+     <div class="form-group">
+    <div class="col-md-4 col-md-offset-4">
+    	<input type="text" class="form-control" name="iPhone" placeholder="爱疯">
     </div>
     </div>
 
