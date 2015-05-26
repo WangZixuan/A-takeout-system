@@ -11,9 +11,9 @@ $getmax = "select id from dishes order by id desc limit 1";
 $result = mysql_query($getmax, $con);
 $nextline = 1+mysql_result($result, 0);
 
-$sql="INSERT INTO dishes (id, name, price, class, explain, image)
+$sql="INSERT INTO dishes (id, name, price, class, explains, image)
 VALUES
-($nextline, '$_POST[name]', '$_POST[price]', '$_POST[classes]', '$_POST[explain]', "null")";
+($nextline, '$_POST[name]', '$_POST[price]', '$_POST[classes]', '$_POST[explain]', 'null')";
 
 if (!mysql_query($sql,$con))
   {
