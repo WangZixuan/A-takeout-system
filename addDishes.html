@@ -1,0 +1,69 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>添加菜品</title>
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<script src="bootstrap/js/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<h1 align="center">添加菜品</h1>
+<br>
+<br>
+<form action="php/addDishes.php" class="form-horizontal" role="form" method="post">
+	<div class="form-group">
+		<label for="name" class="col-md-2 col-md-offset-2 control-label">菜品名称：</label>
+	<div class="col-md-4">
+		<input type="text" class="form-control" id="name" placeholder="输入名称" />
+	</div>
+	</div>
+
+	<div class="form-group">
+		<label for="price" class="col-md-2 col-md-offset-2 control-label">菜品单价：</label>
+	<div class="col-md-4">
+		<input type="text" class="form-control" id="price" placeholder="输入价格" />
+	</div>
+	</div>
+    
+	<div class="form-group">
+		<label for="classes" class="col-md-2 col-md-offset-2 control-label">菜品分类：</label>
+	<div class="col-md-4" style="height:0px">
+		<select name="classes">
+		<option value="1">分类一</option>
+		<option value="2">分类二</option>
+		<option value="3">分类三</option>
+		<option value="4">分类四</option>
+		</select>
+	</div>
+	</div>
+    
+	<div class="form-group">
+		<label for="explain" class="col-md-2 col-md-offset-2 control-label">备注：</label>
+	<div class="col-md-4">
+		<textarea id="explain" rows="5" cols="60" placeholder="输入备注说明"></textarea>
+	</div>
+	</div>
+    
+	<div class="form-group">
+		<label for="image" class="col-md-2 col-md-offset-2 control-label">封面图片：</label>
+	<div class="col-md-4">
+		<a href="###" >添加图片</a>
+		<!--<img src="sources/UploadImage.jpg" alt="选择图片" href="www.baidu.com">-->
+		<input type="file" name="image" class="hidden" value="" />
+	</div>
+	</div>
+
+    <div class="button">
+    <div class="col-md-3 col-md-offset-7">
+    	<button type="reset" name="submit">重置</button>
+    </div>
+    <div class="col-md-3 col-md-offset-4">
+    	<button type="submit" name="submit">提交</button>
+    </div>
+    </div>
+
+</form>
+</body>
+</html>
