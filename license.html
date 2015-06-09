@@ -25,7 +25,33 @@
 
     <link class="usemin" rel="stylesheet" href="./css/license.css">
 
-    <script async src="./js/analytics.js"></script><script class="usemin" src="./js/modernizr.custom.min.58e45b2e.js"></script>
+    <script async src="./js/analytics.js"></script>
+	<script class="usemin" src="./js/modernizr.custom.min.58e45b2e.js"></script>
+     <script type="text/javascript">
+			
+	var leftSecond =10;        //设定初始值
+	var inervalId;
+	function CountDown() 
+	{
+		var reg = document.getElementById("btnReg");    //取出id为btnreg的值
+		if (reg) {                    
+			if (leftSecond <=0) 
+			{                    //如果值小于等于0则按钮可用
+				reg.value = "Register";
+				reg.disabled ="";
+			//                    clearInterval(inervalId);
+			}
+			else 
+			{                                            //如果值大于0
+				//将按钮的值改为…+设定值
+				reg.value ="Read carefully, "+ leftSecond +" seconds left."
+	
+				leftSecond--;                                    //设定值减1
+			}
+		}
+	}
+	inervalId = setInterval("CountDown()", 1000);        //每隔1秒刷新
+	</script>
   </head>
 
 <body>
@@ -267,6 +293,9 @@
     </li>
     </ol>
   </section>
+  <section>
+    <input id="btnReg" type="button" onclick="javascript:window.location.href='register.html';" onclick="register.html" value ="GotoReg" disabled="disabled"/>
+    </section>
 </article>
 
       <script>
@@ -289,7 +318,5 @@
       ga('create','UA-2513347-3',{'cookieDomain':'.ele.me'});
       ga('send','pageview','appagreement/');
     </script>
-
-
-
+    
 </body></html>
