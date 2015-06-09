@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 $con = mysql_connect("localhost","root","");
 if (!$con)
@@ -6,7 +6,7 @@ if (!$con)
   die('Could not connect: ' . mysql_error());
   }
 
-mysql_select_db("users", $con);
+mysql_select_db("takeout", $con);
 
 $sql="INSERT INTO user (id, passwd, email, iPhone)
 VALUES

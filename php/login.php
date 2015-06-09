@@ -5,7 +5,7 @@ if (!$con)
   die('Could not connect: ' . mysql_error());
   }
 
-mysql_select_db("users", $con);
+mysql_select_db("takeout", $con);
 
 echo '<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />';
 
