@@ -1,412 +1,310 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE HTML>
+<html>
 <head>
-<meta name="Generator" />
-<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312"> 
-<title>外卖系统</title>
-<meta name="keywords" content="关键词" />
-<meta name="description" content="描述" />
-<link rel="stylesheet" type="text/css" href="http://t2.fanwe.net:86/public/runtime/statics/d4715e3db6f39cde4b70dd592be3e9aa.css" />
-<script type="text/javascript">
-var APP_ROOT = '';
-var CART_URL = '/index.php?ctl=cart';
-var CART_CHECK_URL = '/index.php?ctl=cart&act=check';
-var LOADER_IMG = 'http://t2.fanwe.net:86/app/Tpl/fanwe/images/lazy_loading.gif';
-var ERROR_IMG = 'http://t2.fanwe.net:86/app/Tpl/fanwe/images/image_err.gif';
-var send_span = 2000;
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html"; charset="GBK" />
+<meta name="keywords" content="Flatro Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="bootstrap/css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<!--webfont-->
+<link href='http://fonts.useso.com/css?family=Lato:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="bootstrap/js/jquery-2.0.0.min.js"></script>
+<!-- start menu -->
+<link href="css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="js/megamenu.js"></script>
+<script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
+<script>$(document).ready(function(c) {
+	$('.alert-close').on('click', function(c){
+		$('.message').fadeOut('slow', function(c){
+	  		$('.message').remove();
+		});
+	});	  
+});
 </script>
-<script type="text/javascript" src="/public/runtime/app/lang.js"></script>
-<script type="text/javascript" src="takeout/bootstrap/js/jquery-2.0.0.js"></script>
+<script>$(document).ready(function(c) {
+	$('.alert-close1').on('click', function(c){
+		$('.message1').fadeOut('slow', function(c){
+	  		$('.message1').remove();
+		});
+	});	  
+});
+</script>
 </head>
+
+
+
 <body>
-<div id="dropdown">	
-	<a href="javascript:void(0);" ctl="store" act="index" action="/store.php" id="search_store">搜商家</a>
-	<a href="javascript:void(0);" ctl="takeaway" act="index" action="/store.php" id="search_takeaway">搜外卖</a>
-	<a href="javascript:void(0);" ctl="fcate" act="index" action="/store.php" id="search_fcate">搜优惠</a>
-	<a href="javascript:void(0);" ctl="ycate" act="index" action="/store.php" id="search_ycate">搜代金</a>
-	<a href="javascript:void(0);" ctl="tuan" act="index" action="/store.php" id="search_tuan">搜团购</a>
-	<a href="javascript:void(0);" ctl="event" act="index" action="/store.php" id="search_event">搜活动</a>
-	<a href="javascript:void(0);" ctl="ss" act="pick" action="/shop.php" id="search_ss" >搜商品</a>
-	<a href="javascript:void(0);" ctl="topic" act="search" action="/shop.php" id="search_topic">搜分享</a>
+<div class="header_top">
+	<div class="container">
+		<div class="one-fifth column row_1">
+			<span class="selection-box"><select class="domains valid" name="domains">
+		       <option>English</option>
+		       <option>French</option>
+		       <option>German</option>
+		    </select></span>
+         </div>
+         <div class="cssmenu">
+			<ul>
+			    <li class="active"><a href="login.html">My Account</a></li> 
+			</ul>
+		 </div>
+	</div>
 </div>	
-	<div class="header">
-		    		<div class="wrap constr">
-			<div class="top_nav">
-				<div class="wrap">
-					<div class="f_r">
-						<span id="user_head_tip">
-							你好，欢迎登录外卖系统！
-	<a href="javascript:void(0);" onclick="ajax_login();">登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-	<a href="/index.php?ctl=user&act=register">注册</a>
-						</span>
-												<span class="v_line">|</span>
-						<a href="javascript:void(0)" onclick="submit_sms();">短信订阅</a><span class="v_line">|</span>
-						<a href="javascript:void(0)" onclick="unsubmit_sms();">短信退订</a><span class="v_line">|</span>
-																		<a href="/tuan.php?ctl=subscribe&act=mail">邮件订阅</a><span class="v_line">|</span>					
-												<span class="cart_ico"><a href="/index.php?ctl=cart" class="" targer="_blank">购物车 <span class="cart_count" id="cart_count">0</span> 件</a></span><span class="v_line">|</span>
-						<a href="/index.php?ctl=help" target="_blank">帮助中心</a>	
-					</div>
-				</div>
-			</div><!--end top_nav-->
-			<div class="blank1"></div>
-			<div class="wrap logo_row">
-				<div class="logo f_l">
-				<a class="link" href="/">
-										<span style='display:inline-block; width:200px; height:44px; background:url(http://t2.fanwe.net:86/public/attachment/201011/4cdd50ed013ec.png) no-repeat; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=http://t2.fanwe.net:86/public/attachment/201011/4cdd50ed013ec.png, sizingMethod=scale);_background-image:none;'></span>				</a>
-				</div>
-				  
-				<div class="now_city f_l">       			 
-					<h3>福州</h3>
-					<a href="/index.php?ctl=city" class="switch_city">更换城市</a>
-				</div>
-								<script type="text/javascript">
-					$(document).ready(function(){
-												$("#search_city").click();
-												
-					});
-				</script>
-							
-				<form id="header_search_box" action="/store.php" method="post">
-					<div class="search_box f_r">					
-						<div class="search_input f_l">						
-						<span class="search_type_select" id="select_search_type">
-							搜商家
-						</span>									
-						<input type="text" class="search_txt" name="keyword" id="header_kw" value="请输入您要搜索的关键词" x-webkit-speech="" x-webkit-grammar="builtin:translate"  />
-						<input type="button" class="search_btn" id="search_btn" value="搜索" />
-						</div>
-						<div class="blank1"></div>
-						<div class="keyword_box f_l">
-												<a href="/index.php?ctl=discover&tag=%E6%9C%8D%E8%A3%85">服装</a>
-												<a href="/index.php?ctl=discover&tag=%E6%89%8B%E6%9C%BA">手机</a>
-												<a href="/index.php?ctl=discover&tag=%E9%9B%B6%E9%A3%9F">零食</a>
-												</div>
-					</div>		
-					<input type="hidden" name="act" id="search_act" value="index" />
-					<input type="hidden" name="ctl" id="search_ctl" value="store" />				
-					<input type="hidden" name="is_redirect" value="1" />
-				</form>					
-			</div><!--end wrap-->
+<!--<div class="wrap-box"></div>
+
+	    <div class="col-xs-3 header-bottom-right">
+	       <ul class="icon1 sub-icon1 profile_img">
+					 <li><a class="active-icon c1" href="#"> </a>
+						<ul class="sub-icon1 list">
+						  <h3>Recently added items(2)</h3>
+						  <div class="shopping_cart">
+							  <div class="cart_box">
+							   	 <div class="message">
+							   	     <div class="alert-close"> </div> 
+					                <div class="list_img"><img src="images/14.jpg" class="img-responsive" alt=""/></div>
+								    <div class="list_desc"><h4><a href="#">velit esse molestie</a></h4>1 x<span class="actual">
+		                             $12.00</span></div>
+		                              <div class="clearfix"></div>
+	                              </div>
+	                            </div>
+	                            <div class="cart_box1">
+								  <div class="message1">
+							   	     <div class="alert-close1"> </div> 
+					                <div class="list_img"><img src="images/15.jpg" class="img-responsive" alt=""/></div>
+								    <div class="list_desc"><h4><a href="#">velit esse molestie</a></h4>1 x<span class="actual">
+		                             $12.00</span></div>
+		                              <div class="clearfix"></div>
+	                              </div>
+	                            </div>
+	                        </div>
+	                        <div class="total">
+	                        	<div class="total_left">CartSubtotal : </div>
+	                        	<div class="total_right">$250.00</div>
+	                        	<div class="clearfix"> </div>
+	                        </div>
+                            <div class="login_buttons">
+							  <div class="check_button"><a href="checkout.html">Check out</a></div>
+							  <div class="login_button"><a href="login.html">Login</a></div>
+							  <div class="clearfix"></div>
+						    </div>
+					      <div class="clearfix"></div>
+						</ul>
+					 </li>
+		      </ul>
+              <div class="search">	  
+				<input type="text" name="s" class="textbox" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
+				<input type="submit" value="Subscribe" id="submit" name="submit">
+				<div id="response"> </div>
+		     </div>
+             <div class="clearfix"></div>
+          </div>
+        <div class="clearfix"></div>
+	 </div>
+</div>-->
+<div class="banner">
+	<div class="container">
+		<div class="banner_desc">
+			<h1>为什么你编程那么好？</h1>
+			<h2>因为我从小就点外卖！</h2>
+			<div class="button">
+			      <a href="location.html" class="hvr-shutter-out-horizontal">开始订单吧！</a>
+			    </div>
 		</div>
-		<script type="text/javascript">
-		 $(document).ready(function(){	
-			$('.index_fenlei .sub_fenlei').parent().mouseenter(function(){
-                    //alert(999);
-				$(this).css({background:'#f5f4f3',"border-left":'1px solid #cccccc',"border-bottom":'1px solid #cccccc'});
-				$(this).find('dd a').css('color','#876E69');
-				//$(this).find('dd').eq(0).addClass('dd_cur');
-				$(this).find('.index_fl').css('border','none');
-				$(this).find('.sub_fenlei').show();
-			}).mouseleave(function(){
-				$(this).css({background:'',border:'none'});
-				$(this).find('dd a').css('color','#414141');
-				$(this).find('.index_fl').css('border-bottom','1px solid #cccccc');
-				//$(this).find('dd').eq(0).removeClass('dd_cur');
-				$(this).find('.sub_fenlei').hide();
-			});	
-			
-			$(".all_class").click(function(){
-				if($(".class_con").css("display")=="none")
-				{
-					$(".all_class").css({background:"#fb581e url(http://t2.fanwe.net:86/app/Tpl/fanwe/images/all_sh.gif) no-repeat 112px 16px" });
-					$(".class_con").css("display","block");
-				}
-				else
-				{
-					$(".all_class").css({background:"#fb581e url(http://t2.fanwe.net:86/app/Tpl/fanwe/images/all_x.gif) no-repeat 112px 16px" });
-					$(".class_con").css("display","none");
-				}
-			});
-        });	
-		</script>
-		<div class="main_bar">
-			<div class="wrap">				
-				<ul class="main_nav">
-					<li class="all_class">
-							全部分类筛选
-						<div class="class_con"  style="display:none;">
-													<dl class="index_fenlei" style="height:117px">
-							 	<dt class="fenlei" style="padding-top:5px;">菜系分类</dt>
-								<dd class="index_fl">
-																		 	                    				<a href="/store.php?cid=33" title="素食" target="_blank" class="">素食</a>
-									 																		 	                    				<a href="/store.php?cid=31" title="ktv" target="_blank" class="">ktv</a>
-									 																		 	                    				<a href="/store.php?cid=30" title="餐饮美食" target="_blank" class="">餐饮美…</a>
-									 																		 	                    				<a href="/store.php?cid=29" title="酒店" target="_blank" class="">酒店</a>
-									 																		 	                    				<a href="/store.php?cid=28" title="旅游" target="_blank" class="">旅游</a>
-									 																		 	                    				<a href="/store.php?cid=27" title="粤菜" target="_blank" class="">粤菜</a>
-									 																		 	                    				<a href="/store.php?cid=26" title="川菜" target="_blank" class="">川菜</a>
-									 																		 	                    				<a href="/store.php?cid=25" title="湘菜" target="_blank" class="">湘菜</a>
-									 																		 	                    				<a href="/store.php?cid=24" title="火锅" target="_blank" class="">火锅</a>
-									 																		 	                    				<a href="/store.php?cid=23" title="烧烤" target="_blank" class="">烧烤</a>
-									 																		 	                    				<a href="/store.php?cid=22" title="小吃快餐" target="_blank" class="">小吃快…</a>
-									 																		 																		 																		 																		 																		 																		 										                    		</dd>
-								<dd class="sub_fenlei">
-	                    				                    				<a href="/store.php?cid=33" target="_blank" class="">素食(0)</a>
-										                    				<a href="/store.php?cid=31" target="_blank" class="">ktv(1)</a>
-										                    				<a href="/store.php?cid=30" target="_blank" class="">餐饮美食(5)</a>
-										                    				<a href="/store.php?cid=29" target="_blank" class="">酒店(0)</a>
-										                    				<a href="/store.php?cid=28" target="_blank" class="">旅游(1)</a>
-										                    				<a href="/store.php?cid=27" target="_blank" class="">粤菜(2)</a>
-										                    				<a href="/store.php?cid=26" target="_blank" class="">川菜(1)</a>
-										                    				<a href="/store.php?cid=25" target="_blank" class="">湘菜(2)</a>
-										                    				<a href="/store.php?cid=24" target="_blank" class="">火锅(0)</a>
-										                    				<a href="/store.php?cid=23" target="_blank" class="">烧烤(1)</a>
-										                    				<a href="/store.php?cid=22" target="_blank" class="">小吃快餐(1)</a>
-										                    				<a href="/store.php?cid=21" target="_blank" class="">日韩料理(0)</a>
-										                    				<a href="/store.php?cid=20" target="_blank" class="">东南亚菜(1)</a>
-										                    				<a href="/store.php?cid=19" target="_blank" class="">西餐(4)</a>
-										                    				<a href="/store.php?cid=18" target="_blank" class="">自助餐(1)</a>
-										                    				<a href="/store.php?cid=17" target="_blank" class="">面包甜点(1)</a>
-										                    				<a href="/store.php?cid=16" target="_blank" class="">其他(1)</a>
-																	</dd>
-							</dl>
-																					<dl class="index_fenlei" style="height:108px">
-							 	<dt class="fenlei">地理位置</dt>
-								<dd class="index_fl">
-																		 	                    				<a href="/store.php?aid=56" title="贵池无" target="_blank" class="">贵池无</a>
-									 																		 	                    				<a href="/store.php?aid=12" title="马尾区" target="_blank" class="">马尾区</a>
-									 																		 	                    				<a href="/store.php?aid=11" title="仓山区" target="_blank" class="">仓山区</a>
-									 																		 	                    				<a href="/store.php?aid=10" title="台江区" target="_blank" class="">台江区</a>
-									 																		 	                    				<a href="/store.php?aid=9" title="晋安区" target="_blank" class="">晋安区</a>
-									 																		 	                    				<a href="/store.php?aid=8" title="鼓楼区" target="_blank" class="">鼓楼区</a>
-									 										                    		</dd>
-								<dd class="sub_fenlei">
-	                    				                    				<a href="/store.php?aid=56" target="_blank" class="">贵池无(3)</a>
-										                    				<a href="/store.php?aid=12" target="_blank" class="">马尾区(3)</a>
-										                    				<a href="/store.php?aid=11" target="_blank" class="">仓山区(5)</a>
-										                    				<a href="/store.php?aid=10" target="_blank" class="">台江区(10)</a>
-										                    				<a href="/store.php?aid=9" target="_blank" class="">晋安区(6)</a>
-										                    				<a href="/store.php?aid=8" target="_blank" class="">鼓楼区(15)</a>
-																	</dd>
-							</dl>
-																					<dl class="index_fenlei" style="height:84px">
-							 	<dt class="fenlei">餐厅氛围</dt>
-								<dd class="index_fl">
-																		 	                    				<a href="/store.php?pid=1" title="情侣约会"  target="_blank" class="">情侣约会</a>
-									 																		 	                    				<a href="/store.php?pid=2" title="特殊情境"  target="_blank" class="">特殊情境</a>
-									 																		 	                    				<a href="/store.php?pid=3" title="商务宴请"  target="_blank" class="">商务宴请</a>
-									 																		 	                    				<a href="/store.php?pid=4" title="朋友同事聚会"  target="_blank" class="">朋友同事…</a>
-									 																		 																		 																		 										                    		</dd>
-								<dd class="sub_fenlei">
-	                    				                    				<a href="/store.php?pid=1" target="_blank" class="">情侣约会(14)</a>
-										                    				<a href="/store.php?pid=2" target="_blank" class="">特殊情境(8)</a>
-										                    				<a href="/store.php?pid=3" target="_blank" class="">商务宴请(5)</a>
-										                    				<a href="/store.php?pid=4" target="_blank" class="">朋友同事聚会(10)</a>
-										                    				<a href="/store.php?pid=5" target="_blank" class="">家庭聚会(9)</a>
-										                    				<a href="/store.php?pid=6" target="_blank" class="">特殊口味(3)</a>
-										                    				<a href="/store.php?pid=7" target="_blank" class="">节令(2)</a>
-																	</dd>
-							</dl>
-																					<dl class="index_fenlei">
-							 	<dt class="fenlei" style="background:none">人均消费</dt>
-								<dd class="index_fl" style="border:none;">
-																		 	                    				<a href="/store.php?a=1" target="_blank" class="">50以下</a>
-									 																		 	                    				<a href="/store.php?a=2" target="_blank" class="">51-100</a>
-									 																		 	                    				<a href="/store.php?a=3" target="_blank" class="">101-200</a>
-									 																		 	                    				<a href="/store.php?a=4" target="_blank" class="">201-400</a>
-									 																		 	                    				<a href="/store.php?a=5" target="_blank" class="">400以上</a>
-									 										                    		</dd>								
-							</dl>
-													</div>	
-					</li>
-											<li >
-							<a href="/index.php"  target="">首页</a>
-						</li>
-											<li >
-							<a href="/store.php"  target="_blank">餐厅</a>
-						</li>
-											<li >
-							<a href="/store.php?ctl=takeaway"  target="">外卖</a>
-						</li>
-											<li >
-							<a href="/index.php?ctl=mall"  target="">商城</a>
-						</li>
-											<li >
-							<a href="/store.php?ctl=ktv"  target="">KTV预订</a>
-						</li>
-											<li >
-							<a href="/tuan.php?ctl=deals"  target="">团购</a>
-						</li>
-											<li >
-							<a href="/index.php?ctl=score"  target="">积分商城</a>
-						</li>
-											<li >
-							<a href="/index.php?ctl=discover"  target="">逛街</a>
-						</li>
-											<li >
-							<a href="/store.php?ctl=event"  target="">活动</a>
-						</li>
-										<div style="clear:both;"></div>
-				</ul>	
-			</div>
-		</div><!--end main_nav-->
 	</div>
-	
-	
-		
-<div class="wrap">
-		 
-<div class="blank"></div>
-<div class="all_city wb">
-	<div class="select_city_tip">
-		<span>您可以进入</span>
-		<a href="/index.php?city=all">全国</a>
-	</div>
-	
-	<span class="select_city_title">或者按拼音首字母选择：</span>
-	 	<div class="city_group">
-						<table>
-						<tr>
-						<td class="zm">
-						B.
-						</td>
-						<td class="au-co">
-												<a href="/index.php?city=beijing">北京</a>
-												</td>
-						</tr>
-						</table>
-	</div>
-		<div class="city_group">
-						<table>
-						<tr>
-						<td class="zm">
-						C.
-						</td>
-						<td class="au-co">
-												<a href="/index.php?city=cd">成都</a>
-												</td>
-						</tr>
-						</table>
-	</div>
-		<div class="city_group">
-						<table>
-						<tr>
-						<td class="zm">
-						F.
-						</td>
-						<td class="au-co">
-												<a href="/index.php?city=fu">福州</a>
-												
-												</td>
-						</tr>
-						</table>
-	</div>
-		<div class="city_group">
-						<table>
-						<tr>
-						<td class="zm">
-						G.
-						</td>
-						<td class="au-co">
-												<a href="/index.php?city=gy">广州</a>
-												</td>
-						</tr>
-						</table>
-	</div>
-		<div class="city_group">
-						<table>
-						<tr>
-						<td class="zm">
-						N.
-						</td>
-						<td class="au-co">
-												<a href="/index.php?city=qz">南京</a>
-												</td>
-						</tr>
-						</table>
-	</div>
-		<div class="city_group">
-						<table>
-						<tr>
-						<td class="zm">
-						S.
-						</td>
-						<td class="au-co">
-												
-												<a href="/index.php?city=shanghai">上海</a>
-												</td>
-						</tr>
-						</table>
-	</div>
-		<div class="city_group">
-						<table>
-						<tr>
-						<td class="zm">
-						X.
-						</td>
-						<td class="au-co">
-												<a href="/index.php?city=xiamen">厦门</a>
-												</td>
-						</tr>
-						</table>
-	</div>
-		<div class="city_group">
-						<table>
-						<tr>
-						<td class="zm">
-						Z.
-						</td>
-						<td class="au-co">
-												<a href="/index.php?city=zhengzhou">郑州</a>
-											
-												</td>
-						</tr>
-						</table>
-	</div>
+</div>	
+<!--<div class="content_top">
+	<h3 class="m_1">Latest Products</h3>
+	<div class="container">
+	   <div class="box_1">
+	       <div class="col-md-7">
+			    <div class="section group">
+						<div class="col_1_of_3 span_1_of_3">
+							<div class="shop-holder">
+		                         <div class="product-img">
+		                            <a href="single.html">
+		                                <img width="225" height="265" src="images/pic1.jpg" class="img-responsive"  alt="item4">		                            </a>
+		                            <a href="" class="button "></a>		                         </div>
+		                    </div>
+		                    <div class="shop-content" style="height: 80px;">
+		                            <div><a href="single.html" rel="tag">humour</a></div>
+		                            <h3><a href="single.html">Non-charac</a></h3>
+		                            <span><span class="amount">$45.00</span></span>
+		                    </div>
+						</div>
+						<div class="col_1_of_3 span_1_of_3">
+							<div class="shop-holder">
+		                         <div class="product-img">
+		                            <a href="single.html">
+		                                <img width="225" height="265" src="images/pic2.jpg" class="img-responsive"  alt="item4">		                            </a>
+		                            <a href="" class="button "></a>		                         </div>
+		                    </div>
+		                    <div class="shop-content" style="height: 80px;">
+		                            <div><a href="single.html" rel="tag">humour</a></div>
+		                            <h3><a href="single.html">Non-charac</a></h3>
+		                            <span><span class="amount">$45.00</span></span>
+		                    </div>
+						</div>
+						<div class="col_1_of_3 span_1_of_3">
+							<div class="shop-holder">
+		                         <div class="product-img">
+		                            <a href="single.html">
+		                                <img width="225" height="265" src="images/pic3.jpg" class="img-responsive"  alt="item4">		                            </a>
+		                            <a href="" class="button "></a>		                         </div>
+		                    </div>
+		                    <div class="shop-content" style="height: 80px;">
+		                            <div><a href="single.html" rel="tag">humour</a></div>
+		                            <h3><a href="single.html">Non-charac</a></h3>
+		                            <span><span class="amount">$45.00</span></span>
+		                    </div>
+						</div>
+						<div class="clearfix"></div> 
+				</div>
+		</div>
+		<div class="col-md-5 row_3">
+			<div class="about-block-content">
+		       <div class="border-add"></div>
+				<h4>About Us</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati beatae quam voluptatibus deleniti ipsa consequatur!</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+				<p>		        	</p></div>
+				<img src="images/pic9.jpg" class="img-responsive" alt=""/>
+	    </div>
+		<div class="clearfix"></div>
 	</div>
 </div>
-<div class="blank"></div>
-<div id="ftw">
-        <div id="ft">
-            <ul class="cf">
-            					<li class="col">
-                    <h3>公司信息</h3>
-                    <ul class="sub-list">
-												<li><a href="/index.php?ctl=help&id=20" >关于我们</a></li>
-												<li><a href="/index.php?ctl=user&act=register" target="_blank">加入我们</a></li>
-						             
-					</ul>
-                </li>  
-								<li class="col">
-                    <h3>获取更新</h3>
-                    <ul class="sub-list">
-												<li><a href="/tuan.php?ctl=rss" target="_blank">RSS订阅</a></li>
-												<li><a href="/tuan.php?ctl=dhapi" target="_blank">开放API</a></li>
-						             
-					</ul>
-                </li>  
-								<li class="col">
-                    <h3>商务合作</h3>
-                    <ul class="sub-list">
-												<li><a href="/index.php?ctl=link" target="_blank">友情链接</a></li>
-												<li><a href="/tuan.php?ctl=coupon&act=supplier_login" target="_blank">商家登录</a></li>
-						             
-					</ul>
-                </li>  
-								<li class="col">
-                    <h3>用户帮助</h3>
-                    <ul class="sub-list">
-						             
-					</ul>
-                </li>  
-				            
-				<li class="col end">
-                    <div class=logo-footer>
-                    	<a href="/" title="订餐商业系统">
-                    							<img src='' width='0' height='0' />						</a>
+</div>
+<div class="content_bottom">
+<div class="container">
+	<h2 class="m_3">From the Blog</h2>
+	<div class="grid_1">
+		<div class="col-md-6 blog_1">
+			<div class="item-inner"> 
+				<img src="images/pic7.jpg" class="img-responsive" alt=""/>																	
+					<div class="date-comments">
+						<div class="time"><span class="date"><span class="word1">14</span> <span class="word2">Jan</span> </span></div>											 
+						<div class="comments">
+						<span><span class="word1">0</span>
+						<span class="word2">comment</span></span>
+						</div>
+					 </div>
+			</div>   
+		</div>
+		<div class="col-md-6 row_2">
+			<div class="item-inner"> 
+				<img src="images/pic8.jpg" class="img-responsive" alt=""/>																	
+					<div class="date-comments">
+						<div class="time"><span class="date"><span class="word1">14</span> <span class="word2">Jan</span> </span></div>											 
+						<div class="comments">
+						<span><span class="word1">0</span>
+						<span class="word2">comment</span></span>
+						</div>
+					 </div>
+			</div>   
+	    </div>
+		<div class="clearfix"></div>
+	</div>
+</div>	
+</div>
+<div class="content_bottom-grid">
+	<div class="col-md-6 row_4"></div>
+	 <div class="col-md-6">
+		<div class="row_5">
+						<div class="col_1_of_3 span_1_of_3">
+							<div class="shop-holder1">
+		                        <a href="single.html"><img src="images/pic4.jpg" class="img-responsive" alt=""/></a>
+		                    </div>
+		                    <div class="shop-content" style="height: 80px;">
+		                            <h3><a href="single.html">Non-charac</a></h3>
+		                            <span><span class="amount">$45.00</span></span>
+		                    </div>
+						</div>
+						<div class="col_1_of_3 span_1_of_3">
+							<div class="shop-holder1">
+		                        <a href="single.html"><img src="images/pic5.jpg" class="img-responsive" alt=""/></a>
+		                    </div>
+		                    <div class="shop-content" style="height: 80px;">
+		                            <h3><a href="single.html">Non-charac</a></h3>
+		                            <span><span class="amount">$45.00</span></span>
+		                    </div>
+						</div>
+						<div class="col_1_of_3 span_1_of_3">
+							<div class="shop-holder1">
+		                        <a href="single.html"><img src="images/pic6.jpg" class="img-responsive" alt=""/></a>
+		                    </div>
+		                    <div class="shop-content" style="height: 80px;">
+		                            <h3><a href="single.html">Non-charac</a></h3>
+		                            <span><span class="amount">$45.00</span></span>
+		                    </div>
+						</div>
+						<div class="clearfix"></div> 
 					</div>
-                </li>
-            </ul>
-			<div class="blank"></div>
-						
-            <div class=copyright>
-            			
-				
-								
-            </div>
-        </div>
-    </div>
-	<div id="gotop"></div>
+	</div>
+	<div class="clearfix"> </div>
+</div>
+<div class="footer">
+	<div class="container">
+	   <div class="footer_top">
+		<div class="col-md-4 box_3">
+			<h3>Our Stores</h3>
+			<address class="address">
+              <p>9870 St Vincent Place, <br>Glasgow, DC 45 Fr 45.</p>
+              <dl>
+                 <dt></dt>
+                 <dd>Freephone:<span> +1 800 254 2478</span></dd>
+                 <dd>Telephone:<span> +1 800 547 5478</span></dd>
+                 <dd>FAX: <span>+1 800 658 5784</span></dd>
+                 <dd>E-mail:&nbsp; <a href="mailto@example.com">info(at)buyshop.com</a></dd>
+              </dl>
+           </address>
+           <ul class="footer_social">
+			  <li><a href=""> <i class="fb"> </i> </a></li>
+			  <li><a href=""><i class="tw"> </i> </a></li>
+			  <li><a href=""><i class="google"> </i> </a></li>
+			  <li><a href=""><i class="instagram"> </i> </a></li>
+		   </ul>
+		</div>
+		<div class="col-md-4 box_3">
+			<h3>Blog Posts</h3>
+			<h4><a href="#">Sed ut perspiciatis unde omnis</a></h4>
+			<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced</p>
+			<h4><a href="#">Sed ut perspiciatis unde omnis</a></h4>
+			<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced</p>
+			<h4><a href="#">Sed ut perspiciatis unde omnis</a></h4>
+			<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced</p>
+		</div>
+		<div class="col-md-4 box_3">
+			<h3>Support</h3>
+			<ul class="list_1">
+				<li><a href="#">Terms & Conditions</a></li>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">Payment</a></li>
+				<li><a href="#">Refunds</a></li>
+				<li><a href="#">Track Order</a></li>
+				<li><a href="#">Services</a></li>
+			</ul>
+			<ul class="list_1">
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Press</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="clearfix"> </div>
+		</div>
+		<div class="footer_bottom">
+			<div class="copy">
+                <p>Copyright &copy; 2015.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+	        </div>
+	    </div>
+	</div>
+</div>-->
 </body>
-</html>
+</html>		
