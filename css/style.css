@@ -1049,7 +1049,7 @@ ul.footer_social li a i:hover{
 	color: #555555;
 	text-transform:uppercase;
 }
-/* radios and checkboxes */
+/* radios and checkbox1es */
 .sky-form {
 	margin-top: -10px;
 }
@@ -1088,7 +1088,7 @@ ul.footer_social li a i:hover{
 .sky-form .select,
 .sky-form .textarea,
 .sky-form .radio,
-.sky-form .checkbox,
+.sky-form .checkbox1,
 .sky-form .toggle,
 .sky-form .button {
 	position: relative;
@@ -1123,8 +1123,8 @@ ul.footer_social li a i:hover{
 .sky-form .select-multiple select {
 	height: auto;
 }
-/* radios and checkboxes */
-.sky-form .radio,.sky-form .checkbox {
+/* radios and checkbox1es */
+.sky-form .radio,.sky-form .checkbox1 {
 	outline:none;
 	border:none;
 	margin-bottom: 4px;
@@ -1141,16 +1141,16 @@ ul.footer_social li a i:hover{
 	text-transform: none;
 }
 .sky-form .radio:last-child,
-.sky-form .checkbox:last-child {
+.sky-form .checkbox1:last-child {
 	margin-bottom: 0;
 }
 .sky-form .radio input,
-.sky-form .checkbox input {
+.sky-form .checkbox1 input {
 	position: absolute;
 	left: -9999px;
 }
 .sky-form .radio i,
-.sky-form .checkbox i {
+.sky-form .checkbox1 i {
 	position: absolute;
 	top: 5px;
 	left: 0;
@@ -1166,7 +1166,7 @@ ul.footer_social li a i:hover{
 	border-radius: 50%;
 }
 .sky-form .radio input + i:after,
-.sky-form .checkbox input + i:after {
+.sky-form .checkbox1 input + i:after {
 	position: absolute;
 	opacity: 0;
 	transition: opacity 0.1s;
@@ -1183,7 +1183,7 @@ ul.footer_social li a i:hover{
 	height: 5px;
 	border-radius: 50%;
 }
-.sky-form .checkbox input + i:after {
+.sky-form .checkbox1 input + i:after {
 	content: '';
 	top: 3px;
 	left: 2px;
@@ -1193,7 +1193,7 @@ ul.footer_social li a i:hover{
 	text-align: center;
 }
 .sky-form .radio input:checked + i:after,
-.sky-form .checkbox input:checked + i:after {
+.sky-form .checkbox1 input:checked + i:after {
 	opacity: 1;
 }
 .sky-form .inline-group {
@@ -1205,12 +1205,12 @@ ul.footer_social li a i:hover{
 	clear: both;
 }
 .sky-form .inline-group .radio,
-.sky-form .inline-group .checkbox {
+.sky-form .inline-group .checkbox1 {
 	float: left;
 	margin-right: 30px;
 }
 .sky-form .inline-group .radio:last-child,
-.sky-form .inline-group .checkbox:last-child {
+.sky-form .inline-group .checkbox1:last-child {
 	margin-bottom: 4px;
 }
 /* icons */
@@ -1226,7 +1226,7 @@ ul.footer_social li a i:hover{
 .sky-form .select select,
 .sky-form .textarea textarea,
 .sky-form .radio i,
-.sky-form .checkbox i,
+.sky-form .checkbox1 i,
 .sky-form .toggle i,
 .sky-form .icon-append,
 .sky-form .icon-prepend {
@@ -1245,7 +1245,7 @@ ul.footer_social li a i:hover{
 .sky-form .select:hover select,
 .sky-form .textarea:hover textarea,
 .sky-form .radio:hover i,
-.sky-form .checkbox:hover i,
+.sky-form .checkbox1:hover i,
 .sky-form .toggle:hover i {
 	border-color:#f54d56;
 }
@@ -1257,7 +1257,7 @@ ul.footer_social li a i:hover{
 .sky-form .select select:focus,
 .sky-form .textarea textarea:focus,
 .sky-form .radio input:focus + i,
-.sky-form .checkbox input:focus + i,
+.sky-form .checkbox1 input:focus + i,
 .sky-form .toggle input:focus + i {
 	border-color: #2da5da;
 }
@@ -1265,11 +1265,11 @@ ul.footer_social li a i:hover{
 .sky-form .radio input + i:after {
 	background-color:#f54d56;
 }
-.sky-form .checkbox input + i:after {
+.sky-form .checkbox1 input + i:after {
 	color:#f54d56;
 }
 .sky-form .radio input:checked + i,
-.sky-form .checkbox input:checked + i,
+.sky-form .checkbox1 input:checked + i,
 .sky-form .toggle input:checked + i {
 	border-color:#f54d56;
 }
@@ -1278,7 +1278,7 @@ ul.footer_social li a i:hover{
 .sky-form .state-error select,
 .sky-form .state-error textarea,
 .sky-form .radio.state-error i,
-.sky-form .checkbox.state-error i,
+.sky-form .checkbox1.state-error i,
 .sky-form .toggle.state-error i {
 	background: #fff0f0;
 }
@@ -1287,7 +1287,7 @@ ul.footer_social li a i:hover{
 .sky-form .state-success select,
 .sky-form .state-success textarea,
 .sky-form .radio.state-success i,
-.sky-form .checkbox.state-success i,
+.sky-form .checkbox1.state-success i,
 .sky-form .toggle.state-success i {
 	background: #f0fff0;
 }
@@ -1296,7 +1296,7 @@ ul.footer_social li a i:hover{
 .sky-form .select.state-disabled,
 .sky-form .textarea.state-disabled,
 .sky-form .radio.state-disabled,
-.sky-form .checkbox.state-disabled,
+.sky-form .checkbox1.state-disabled,
 .sky-form .toggle.state-disabled,
 .sky-form .button.state-disabled {
 	cursor: default;
@@ -1306,7 +1306,7 @@ ul.footer_social li a i:hover{
 .sky-form .select.state-disabled:hover select,
 .sky-form .textarea.state-disabled:hover textarea,
 .sky-form .radio.state-disabled:hover i,
-.sky-form .checkbox.state-disabled:hover i,
+.sky-form .checkbox1.state-disabled:hover i,
 .sky-form .toggle.state-disabled:hover i {
 	border-color: #e5e5e5;
 }
@@ -2113,19 +2113,19 @@ p.cart {
 	font-size: 1em;
 	padding: 0.5em;
 }
-.checkbox {
+.checkbox1 {
 	margin-bottom: 4px;
 	padding-left: 27px;
 	font-size: 1.1em;
 	line-height: 27px;
 	cursor: pointer;
 }
-.checkbox {
+.checkbox1 {
 	position: relative;
 	font-size:0.85em;
 	color:#555;
 }
-.checkbox:last-child {
+.checkbox1:last-child {
 	margin-bottom: 0;
 }
 .news-letter {
@@ -2141,7 +2141,7 @@ p.cart {
 	-o-transition: 0.5s all;
 	clear: both;
 }
-.checkbox i {
+.checkbox1 i {
 	position: absolute;
 	bottom: 5px;
 	left: 0;
@@ -2151,7 +2151,7 @@ p.cart {
 	outline: none;
 	border: 2px solid #D2CF99;
 }
-.checkbox input + i:after {
+.checkbox1 input + i:after {
 	content: '';
 	background: url("../images/tick1.png") no-repeat 1px 2px;
 	top: -1px;
@@ -2161,7 +2161,7 @@ p.cart {
 	font: normal 12px/16px FontAwesome;
 	text-align: center;
 }
-.checkbox input + i:after {
+.checkbox1 input + i:after {
 	position: absolute;
 	opacity: 0;
 	transition: opacity 0.1s;
@@ -2170,11 +2170,11 @@ p.cart {
 	-moz-transition: opacity 0.1s;
 	-webkit-transition: opacity 0.1s;
 }
-.checkbox input {
+.checkbox1 input {
 	position: absolute;
 	left: -9999px;
 }
-.checkbox input:checked + i:after {
+.checkbox1 input:checked + i:after {
 	opacity: 1;
 }
 .news-letter:hover {
