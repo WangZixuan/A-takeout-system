@@ -19,15 +19,22 @@ $result = mysql_query($sql);
 
 if(mysql_num_rows($result)==0)
   {
-echo "<meta http-equiv='Content-Type' content='text/html' charset='utf-8'>";
+
+
+
 echo '<script>alert("ID error or PWD error");history.back();</script>'; 
 
   }
-else{
-  
+
+$row = mysql_fetch_array($result);
+  if($row['id']=='123'){
+ echo '<script>alert("Success!");</script>';
+   echo ' <script>window.location="../management.html";</script>';
+}
+	
    echo '<script>alert("Success!");</script>';
    echo ' <script>window.location="../allRestaurants.html";</script>';
-}
+
 mysql_close($con);
 
 
