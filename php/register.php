@@ -20,6 +20,7 @@ if (!mysql_query($sql,$con))
 mysql_close($con);
 
 echo '<script> alert("你好"); history.back();</script>';   
+ echo ' <script>window.location="../allRestaurants.html";</script>';
 exit;   
 
 
