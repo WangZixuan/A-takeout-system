@@ -15,6 +15,7 @@ $sql = "SELECT * FROM user WHERE id = '$i' AND passwd='$p'";
 
 $result = mysql_query($sql);
 
+global $login; 
 
 
 if(mysql_num_rows($result)==0)
@@ -26,15 +27,21 @@ echo '<script>alert("ID error or PWD error");history.back();</script>';
 
   }
 
+
 $row = mysql_fetch_array($result);
+
+session_start();
+
+$_SESSION["login"]=$row['id']; 
+
   if($row['id']=='123'){
  echo '<script>alert("Success!");</script>';
    echo ' <script>window.location="../management.html";</script>';
 }
-	
+else{
    echo '<script>alert("Success!");</script>';
-   echo ' <script>window.location="../allRestaurants.html";</script>';
-
+   echo ' <script>window.location="../allRestaurants.php";</script>';
+}
 mysql_close($con);
 
 
