@@ -238,7 +238,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <!-- grids_of_4 -->
         <div class="grids_of_4">
           <div class="grid1_of_4">
-                <div class="content_box"><a href="single.html">
+                <div class="content_box"><a href="singleRestaurant.html">
                   <div class="view view-fifth">
                      <img src="images/restaurants/1_weizhongxian.jpg" class="img-responsive" alt=""/>
                         <div class="mask1">
@@ -252,7 +252,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
             </div>
             <div class="grid1_of_4">
-                <div class="content_box"><a href="single.html">
+                <div class="content_box"><a href="singleRestaurant.html">
                   <div class="view view-fifth">
                      <img src="images/restaurants/2_dujiapaigu.jpg" class="img-responsive" alt=""/>
                        <div class="mask1">
@@ -266,7 +266,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
             </div>
             <div class="grid1_of_4">
-                <div class="content_box"><a href="single.html">
+                <div class="content_box"><a href="singleRestaurant.html">
                   <div class="view view-fifth">
                      <img src="images/restaurants/3_gongfubaozai.jpg" class="img-responsive" alt=""/>
                         <div class="mask1">
@@ -280,7 +280,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
             </div>
             <div class="grid1_of_4">
-                <div class="content_box"><a href="single.html">
+                <div class="content_box"><a href="singleRestaurant.html">
                   <div class="view view-fifth">
                      <img src="images/restaurants/4_jiaodiandian.jpg" class="img-responsive" alt=""/>
                         <div class="mask1">
@@ -297,7 +297,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
         <div class="grids_of_4">
           <div class="grid1_of_4">
-                <div class="content_box"><a href="single.html">
+                <div class="content_box"><a href="singleRestaurant.html">
                   <div class="view view-fifth">
                      <img src="images/restaurants/5_qingzhihe.jpg" class="img-responsive" alt=""/>
                         <div class="mask1">
@@ -311,7 +311,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
             </div>
             <div class="grid1_of_4">
-                <div class="content_box"><a href="single.html">
+                <div class="content_box"><a href="singleRestaurant.html">
                   <div class="view view-fifth">
                      <img src="images/restaurants/6_qianbaiwei.jpg" class="img-responsive" alt=""/>
                        <div class="mask1">
@@ -325,7 +325,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
             </div>
             <div class="grid1_of_4">
-                <div class="content_box"><a href="single.html">
+                <div class="content_box"><a href="singleRestaurant.html">
                   <div class="view view-fifth">
                      <img src="images/restaurants/7_cailinji.jpg" class="img-responsive" alt=""/>
                         <div class="mask1">
@@ -339,7 +339,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
             </div>
             <div class="grid1_of_4">
-                <div class="content_box"><a href="single.html">
+                <div class="content_box"><a href="singleRestaurant.html">
                   <div class="view view-fifth">
                      <img src="images/restaurants/8_shikede.jpg" class="img-responsive" alt=""/>
                         <div class="mask1">
@@ -356,7 +356,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
         <div class="grids_of_4">
           <div class="grid1_of_4">
-                <div class="content_box"><a href="single.html">
+                <div class="content_box"><a href="singleRestaurant.html">
                   <div class="view view-fifth">
                      <img src="images/restaurants/9_guojiadayuan.jpg" class="img-responsive" alt=""/>
                         <div class="mask1">
@@ -370,7 +370,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
             </div>
             <div class="grid1_of_4">
-                <div class="content_box"><a href="single.html">
+                <div class="content_box"><a href="singleRestaurant.html">
                   <div class="view view-fifth">
                      <img src="images/restaurants/10_maocai.jpg" class="img-responsive" alt=""/>
                         <div class="mask1">
@@ -384,7 +384,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
             </div>
             <div class="grid1_of_4">
-                <div class="content_box"><a href="single.html">
+                <div class="content_box"><a href="singleRestaurant.html">
                   <div class="view view-fifth">
                      <img src="images/restaurants/11_ruyihuntun.jpg" class="img-responsive" alt=""/>
                         <div class="mask1">
@@ -398,7 +398,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
             </div>
             <div class="grid1_of_4">
-                <div class="content_box"><a href="single.html">
+                <div class="content_box"><a href="singleRestaurant.html">
                   <div class="view view-fifth">
                      <img src="images/restaurants/12_jieke.jpg" class="img-responsive" alt=""/>
                         <div class="mask1">
