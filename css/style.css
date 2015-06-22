@@ -455,7 +455,7 @@ span.actual{
 	-o-transition: all 0.5s ease-out;
 }
 .search input[type="text"]:focus{
-	width:150px;
+	width:151px;
 }
 .search input[type="submit"] {
 	  border: none;
@@ -2444,7 +2444,7 @@ ul.single_social {
   font-size: 0.85em;
 }
 .banner {
-  min-height:150px;
+  min-height:151px;
 }
 .banner_desc {
   padding-top: 4em;
@@ -2495,7 +2495,7 @@ h2.m_3 {
   margin-right: 0;
 }
 .row_4 {
-   min-height: 150px;
+   min-height: 151px;
 }
 .row_5 {
   padding: 7% 0 0 0;
@@ -2539,7 +2539,7 @@ h3.m_2 {
   font-size: 1.2em;
 }
 .map iframe {
-  min-height:150px;
+  min-height:151px;
 }
 .map {
   margin-bottom: 2em;

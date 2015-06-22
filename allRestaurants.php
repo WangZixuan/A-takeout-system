@@ -439,5 +439,67 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
    <!-- end content -->
  </div>
 </div>
+<div class="footer">
+	<div class="container">
+	   <div class="footer_top">
+		<div class="col-md-4 box_3">
+			<h3>联系我们</h3>
+			<address class="address">
+              <p>Nanjing University.</p>
+              <dl>
+                 <dt></dt>
+                 <dd>iPhone:<span> +159********</span></dd>
+                 <dd>Telephone:<span> +1 *****</span></dd>
+                 <dd>FAX: <span>+1 800 ******</span></dd>
+                 <dd>E-mail:&nbsp; <a href="mailto@example.com">contace@waimai.com</a></dd>
+              </dl>
+           </address>
+           <ul class="footer_social">
+			  <li><a href=""> <i class="fb"> </i> </a></li>
+			  <li><a href=""><i class="tw"> </i> </a></li>
+			  <li><a href=""><i class="google"> </i> </a></li>
+			  <li><a href=""><i class="instagram"> </i> </a></li>
+		   </ul>
+		</div>
+		<div class="col-md-4 box_3">
+			<h3>最新讯息</h3>
+			<h4><a href="#">热烈祝贺我司与支付宝达成合作</a></h4>
+			<p>为庆祝我司与支付宝达成合作，现举行“三天免费吃”的活动。机不可失，时不再来！</p>
+			<h4><a href="#">美联储正在与我司洽谈合作事宜</a></h4>
+			<p>日前，我司法务代表紫薇正在腐朽的美帝国与美联储洽谈，我们坚信：只有共产主义才能拯救全世界！</p>
+			<h4><a href="#">即将到来的活动</a></h4>
+			<p>为庆祝高考顺利结束，高考考生可凭借准考证领取50000元大礼包！</p>
+		</div>
+		<div class="col-md-4 box_3">
+			<h3>系统支持</h3>
+
+			<ul class="list_1">
+				<li><a href="#">Terms & Conditions</a></li>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">Payment</a></li>
+				<li><a href="#">Refunds</a></li>
+				<li><a href="#">Track Order</a></li>
+				<li><a href="#">Services</a></li>
+			</ul>
+
+			<ul class="list_1">
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Press</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+
+			<div class="clearfix"> </div>
+		</div>
+		<div class="clearfix"> </div>
+		</div>
+		<div class="footer_bottom">
+			<div class="copy">
+                <p>Copyright &copy; 2015.Waimai Commpany. All rights reserved.</p>
+	        </div>
+	    </div>
+	</div>
+</div>
 </body>
 </html>		
