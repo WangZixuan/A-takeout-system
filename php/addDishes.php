@@ -49,7 +49,7 @@ $nextline = 1+mysql_result($result, 0);
 
 $sql="INSERT INTO dishes (id, name, price, class, explains, image)
 VALUES
-($nextline, '$_POST[name]', '$_POST[price]', '$_POST[classes]', '$_POST[explain]', '$imgName')";
+($nextline, '$_POST[name]', '$_POST[price]', '$_POST[classes]', '$_POST[explain]', '$yimgName')";
 
 if (!mysql_query($sql,$con))
   {
